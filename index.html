@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RONIN-OFFICIAL ／ PROJECT RONIN</title>
+<style>
+  :root{ --bg:#120808; --ink:#d6d0cc; --dim:#8a827e; --faint:#5a5250; --red:#c42c28; }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; height:100%; background:var(--bg); color:var(--ink);
+    font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif; }
+  body{ display:flex; align-items:center; justify-content:center; padding:32px; }
+  body::after{ content:""; position:fixed; inset:0; pointer-events:none;
+    background:repeating-linear-gradient(0deg, rgba(0,0,0,.22) 0 1px, transparent 1px 3px); }
+  .wrap{ width:100%; max-width:760px; position:relative; z-index:1; }
+  .top{ display:flex; align-items:flex-start; gap:14px; }
+  .bar{ width:8px; height:74px; background:var(--red); }
+  h1{ margin:0; font-size:44px; letter-spacing:.06em; color:#f0ece8; }
+  .sub{ margin:6px 0 0; font-size:15px; color:var(--dim); letter-spacing:.16em; }
+  .rule{ height:1px; background:#3a1e1a; margin:26px 0 24px; }
+  .links{ display:grid; gap:12px; }
+  a.item{ display:flex; align-items:baseline; justify-content:space-between; gap:16px;
+    text-decoration:none; color:var(--ink); border:1px solid #3a1e1a; background:#170b0a;
+    padding:16px 18px; transition:.16s; }
+  a.item:hover{ border-color:var(--red); background:#1d0d0b; transform:translateY(-1px); }
+  .name{ font-size:19px; letter-spacing:.04em; }
+  .name small{ display:block; margin-top:4px; font-size:12px; color:var(--faint);
+    letter-spacing:.1em; font-weight:400; }
+  .go{ font-family:Consolas,monospace; font-size:12px; color:var(--red); letter-spacing:.1em; }
+  .foot{ margin-top:28px; display:flex; justify-content:space-between; gap:16px;
+    font-family:Consolas,monospace; font-size:11px; color:var(--faint); letter-spacing:.08em; }
+  @media (max-width:520px){
+    h1{ font-size:32px; } .bar{ height:58px; } .name{ font-size:17px; }
+    .foot{ flex-direction:column; gap:6px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="bar"></div>
+    <div>
+      <h1>RONIN-OFFICIAL</h1>
+      <p class="sub">PROJECT RONIN ／ 記録・模組・端末</p>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="links">
+    <a class="item" href="https://ronin-official.github.io/ba-gacha-sim/">
+      <span class="name">蔚蓝档案 三服抽卡模拟器<small>GACHA SIM ／ JP · CN · GLOBAL</small></span>
+      <span class="go">OPEN →</span>
+    </a>
+    <a class="item" href="https://github.com/Ronin-official/PROJECT-RONIN-NIGHTRUNNERS-MOD">
+      <span class="name">NIGHT-RUNNERS 模组包<small>BEPINEX · IL2CPP ／ 14 PLUGINS</small></span>
+      <span class="go">GITHUB →</span>
+    </a>
+    <a class="item" href="https://github.com/Ronin-official">
+      <span class="name">全部仓库<small>REPOSITORIES</small></span>
+      <span class="go">GITHUB →</span>
+    </a>
+    <a class="item" href="https://discord.com/users/victory6179" target="_blank" rel="noopener">
+      <span class="name">联系方式<small>DISCORD ／ VICTORY6179</small></span>
+      <span class="go">MESSAGE →</span>
+    </a>
+  </div>
+
+  <div class="foot">
+    <span>REC-OS ／ ARCHIVE TERMINAL — BUILDING</span>
+    <span>© 2026 RONIN-OFFICIAL</span>
+  </div>
+</div>
+</body>
+</html>
