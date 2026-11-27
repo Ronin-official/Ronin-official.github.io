@@ -29,6 +29,12 @@
   .go{ font-family:Consolas,monospace; font-size:12px; color:var(--red); letter-spacing:.1em; }
   .foot{ margin-top:28px; display:flex; justify-content:space-between; gap:16px;
     font-family:Consolas,monospace; font-size:11px; color:var(--faint); letter-spacing:.08em; }
+  /* 背景车图：把 86.jpg 放在同目录即可，没有图也不会破版 */
+  body::before{ content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+    background:url("86.jpg") center 70%/cover no-repeat;
+    opacity:.16; filter:grayscale(35%) contrast(1.05);
+    -webkit-mask-image:linear-gradient(180deg, transparent 0%, #000 38%, #000 100%);
+    mask-image:linear-gradient(180deg, transparent 0%, #000 38%, #000 100%); }
   @media (max-width:520px){
     h1{ font-size:32px; } .bar{ height:58px; } .name{ font-size:17px; }
     .foot{ flex-direction:column; gap:6px; }
@@ -53,7 +59,7 @@
       <span class="go">OPEN →</span>
     </a>
     <a class="item" href="https://github.com/Ronin-official/PROJECT-RONIN-NIGHTRUNNERS-MOD">
-      <span class="name">NIGHT-RUNNERS 模组包<small>BEPINEX · IL2CPP ／ 14 PLUGINS</small></span>
+      <span class="name">NIGHT-RUNNERS 模组包<small>BEPINEX · IL2CPP ／ 15 PLUGINS</small></span>
       <span class="go">GITHUB →</span>
     </a>
     <a class="item" href="https://github.com/Ronin-official">
